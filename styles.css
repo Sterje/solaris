@@ -60,9 +60,10 @@ body {
     font-weight: bold;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: antiquewhite;
     text-transform: uppercase;
+    font-family: "Jaro";
 }
 
 #searchInputMobile {
@@ -73,9 +74,12 @@ h1 {
 #searchButtonMobile {
     display: none;
 }
-@media screen and (max-width: 700px){
-    
 
+.random-section p {
+    display: none;
+}
+
+@media screen and (max-width: 700px){
     
 .header {
     display: flex;
@@ -100,8 +104,59 @@ h1 {
 }
 .planet-wrapper {
     display: flex;
+    flex-direction: column;
+
     align-items: center;
     justify-content: center;
+}
+
+.random-section p {
+    display:block;
+}
+
+#planetMars {
+    display: none;
+    text-align: end;
+    color:antiquewhite;
+    margin-top: 2rem;
+    width: 80vw; /* Storlek på planeten */
+    height: 40vh;
+    background: radial-gradient(circle at 50% 50%, #ff5f40, #b03a2e); /* Mars färggradient */
+    border-radius: 50%; /* Gör den rund */
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
+        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+    position: relative;
+}
+
+#sun {
+    display: none;
+    text-align: end;
+    color: antiquewhite;
+    margin-top: 2rem;
+    width: 80vw; /* Storlek på planeten */
+    height: 40vh;
+    background: radial-gradient(circle at 50% 50%, #ffee00, #ffaa00); /* Mars färggradient */
+    border-radius: 50%; /* Gör den rund */
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
+        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+    position: relative;
+}
+
+#planetJupiter {
+    display: none;
+    text-align: end;
+    color: antiquewhite;
+    margin-top: 2rem;
+    width: 80vw; /* Storlek på planeten */
+    height: 40vh;
+    background: radial-gradient(circle at 50% 50%, #7c7c59, #c3c1bf); /* Mars färggradient */
+    border-radius: 50%; /* Gör den rund */
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
+        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+    position: relative;
 }
 
 .search {
@@ -138,15 +193,5 @@ h1 {
     text-transform: uppercase;
 }
 
-.planetMars {
-    margin-top: 2rem;
-    width: 80vw; /* Storlek på planeten */
-    height: 40vh;
-    background: radial-gradient(circle at 50% 50%, #ff5f40, #b03a2e); /* Mars färggradient */
-    border-radius: 50%; /* Gör den rund */
-    box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
-    position: relative;
-}
+
 }
