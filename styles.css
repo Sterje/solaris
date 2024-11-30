@@ -40,6 +40,7 @@ body {
 }
 
 #searchInputDesktop {
+    
     height: 3rem;
     width: 15rem;
     border-radius: 10px;
@@ -48,6 +49,7 @@ body {
     font-style: italic;
 }
 #searchButtonDesktop {
+
     height: 3rem;
     width: 6rem;
     margin-left: .5rem;
@@ -63,10 +65,12 @@ h1 {
     text-transform: uppercase;
 }
 
-.searchInputMobile {
+#searchInputMobile {
     display: none;
+    font-style: italic;
+    font-size: 1rem;
 }
-.searchButtonMobile {
+#searchButtonMobile {
     display: none;
 }
 @media screen and (max-width: 700px){
@@ -107,7 +111,7 @@ h1 {
     margin-top: 3rem;
 }
 
-.searchInputMobile {
+#searchInputMobile {
     display: flex;
     padding: 5px;
     height: 3rem;
@@ -116,13 +120,16 @@ h1 {
     font-size: 1.5rem;
 }
 
-.searchButtonMobile {
+#searchButtonMobile {
     display: block;
     height: 3rem;
     width: 5rem;
     margin-left: .5rem;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    background-color: #ff5f40;
+    color: antiquewhite;
+    font-weight: bold;
 }
 
 h1 {
