@@ -62,7 +62,7 @@ h1 {
 .planetMars {
     margin-top: 2rem;
     width: 80vw; /* Storlek på planeten */
-    height: 35vh;
+    height: 40vh;
     background: radial-gradient(circle at 50% 50%, #ff5f40, #b03a2e); /* Mars färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
