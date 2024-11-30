@@ -7,6 +7,7 @@
 
 body {
     background-color: rgb(0, 0, 64);
+    /* background: radial-gradient(circle, #000 60%, #001c40); */
     }
 
 .header {
@@ -173,6 +174,47 @@ h1 {
         15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
     position: relative;
 }
+
+    #planetSaturn {
+    display: none;
+    text-align: end;
+    color: antiquewhite;
+    position: relative;
+    width: 70vw;
+    height: 30vh;
+    background: radial-gradient(circle at 30% 30%, #f2c94c, #e6ac3a);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(242, 201, 76, 0.5);
+  }
+  
+  #planetSaturn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95vw;
+    height: 100px;
+    border: 3px solid rgba(240, 240, 240, 0.7);
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+    transform: translate(-50%, -50%) rotate(-20deg);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    z-index: -1; /* Placera ringen bakom planeten */
+  }
+  
+    #planetSaturn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+    transform: translate(-50%, -50%) rotate(-20deg);
+    z-index: -2; /* Extra skugga bakom ringen */
+  }
+  
 
 .search {
     display: flex;
