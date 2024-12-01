@@ -89,13 +89,17 @@ body {
 
 #sun {
     text-align: end;
-    color: antiquewhite;
+    
     margin-top: 2rem;
     background: radial-gradient(circle at 50% 50%, #ffee00, #ffaa00); /* Mars färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
         15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+}
+
+#p-Sun {
+    color:#848181;
 }
 
 .planet-section p {
@@ -289,7 +293,7 @@ h1 {
     height: 41vh;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
+    
     
 }
 .planet-wrapper {
@@ -297,7 +301,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid blue;
+    
 }
 
 #planetMars {
