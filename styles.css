@@ -286,13 +286,18 @@ h1 {
 
 .planets-container {
     display: flex;
+    height: 41vh;
     justify-content: center;
     align-items: center;
+    border: 2px solid blue;
     
 }
 .planet-wrapper {
+    height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid blue;
 }
 
 #planetMars {
