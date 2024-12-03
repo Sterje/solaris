@@ -469,6 +469,7 @@ h1 {
 
 .facts-container {
     display: flex;
+    padding-bottom: 70px;
 }
 
 .hello {
