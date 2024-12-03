@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     background-color: rgb(0, 0, 64);
-    
     background: radial-gradient(circle, #000 60%, #001c40);
-    }
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .header {
     display: flex;
@@ -35,10 +34,9 @@ body {
     align-items: center;
     height: 100%;
     width: 50vw;
-
 }
 
-#searchInputDesktop {
+.searchInputDesktop {
     
     height: 3rem;
     width: 15rem;
@@ -47,8 +45,8 @@ body {
     font-size: 1rem;
     font-style: italic;
 }
-#searchButtonDesktop {
 
+.searchButtonDesktop {
     height: 3rem;
     width: 6rem;
     margin-left: .5rem;
@@ -83,15 +81,12 @@ body {
 
 .planet-section:hover {
     transform:scale(1.3);
-    
-
 }
 
 #sun {
     text-align: end;
-    
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #ffee00, #ffaa00); /* Mars färggradient */
+    background: radial-gradient(circle at 50% 50%, #ffee00, #ffaa00); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
@@ -111,12 +106,9 @@ body {
 } 
 
 #planetMerkur {
-    
     color:antiquewhite;
     margin-top: 2rem;
-    /* width: 200px; Storlek på planeten */
-    /* height: 200px; */
-    background: radial-gradient(circle at 100% 50%, #362b21, #ceced1); /* Mars färggradient */
+    background: radial-gradient(circle at 100% 50%, #362b21, #ceced1); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
@@ -126,9 +118,7 @@ body {
 #planetVenus {
     color:antiquewhite;
     margin-top: 2rem;
-    /* width: 200px; Storlek på planeten */
-    /* height: 200px; */
-    background: radial-gradient(circle at 50% 100%, #ce9506, #c55f00); /* Mars färggradient */
+    background: radial-gradient(circle at 50% 100%, #ce9506, #c55f00); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
@@ -138,9 +128,7 @@ body {
 #planetEarth {
     color:antiquewhite;
     margin-top: 2rem;
-    /* width: 200px; Storlek på planeten */
-    /* height: 200px; */
-    background: radial-gradient(circle at 50% 50%, #03e91a, #1409ed); /* Mars färggradient */
+    background: radial-gradient(circle at 50% 50%, #03e91a, #1409ed); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(190, 185, 183, 0.5), /* Insida skugga */
@@ -150,7 +138,7 @@ body {
 #planetMars {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #ff5f40, #b03a2e); /* Mars färggradient */
+    background: radial-gradient(circle at 50% 50%, #ff5f40, #b03a2e); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
@@ -161,7 +149,7 @@ body {
     text-align: end;
     color: antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #7c7c59, #c3c1bf); /* Mars färggradient */
+    background: radial-gradient(circle at 50% 50%, #7c7c59, #c3c1bf); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
@@ -175,9 +163,9 @@ body {
     background: radial-gradient(circle at 30% 30%, #f2c94c, #e6ac3a);
     border-radius: 50%;
     box-shadow: 0 0 30px rgba(242, 201, 76, 0.5);
-  }
+}
 
-  #planetSaturn::before {
+#planetSaturn::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -190,13 +178,11 @@ body {
     transform: translate(-50%, -50%) rotate(-40deg);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     z-index: -1; /* Placera ringen bakom planeten */
-    /* Animation */
-    /* animation: rotateRing 30s linear infinite;  */
-  }
+}
 
-  #planetSaturn:hover::before {
+#planetSaturn:hover::before {
     z-index: -4;
-  }
+}
 
 #planetSaturn::after {
     content: "";
@@ -209,14 +195,12 @@ body {
     background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
     transform: translate(-50%, -50%) rotate(-20deg);
     z-index: -2; /* Extra skugga bakom ringen */
-  }
+}
 
-  #planetUranus {
+#planetUranus {
     color:antiquewhite;
     margin-top: 2rem;
-    /* width: 200px; Storlek på planeten */
-    /* height: 200px; */
-    background: radial-gradient(circle at 50% 50%, #63dee0, #02a0a8); /* Mars färggradient */
+    background: radial-gradient(circle at 50% 50%, #63dee0, #02a0a8); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
@@ -226,9 +210,7 @@ body {
 #planetNeptun {
     color:antiquewhite;
     margin-top: 2rem;
-    /* width: 200px; Storlek på planeten */
-    /* height: 200px; */
-    background: radial-gradient(circle at 50% 50%, #031ae9, #ceced1); /* Mars färggradient */
+    background: radial-gradient(circle at 50% 50%, #031ae9, #ceced1); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
@@ -242,29 +224,118 @@ h1 {
     font-family: "Jaro";
 }
 
-#searchInputMobile {
+/* Planet page css */
+
+.name-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section-name {
+    padding: 1rem;
+    width: 70%;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: center;
+}
+.info-container {
+    color:antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    padding: 1rem;
+    width: 50%;
+    line-height: 1.5rem;
+    color: antiquewhite;
+}
+
+.section-container {
+    color: antiquewhite;
+    padding: 1rem;
+    width: 50%;
+    line-height: 1.5rem;
+}
+
+.hello {
+    display: flex;
+    width: 70%;
+}
+
+.section-distance {
+}
+.section-circumference {
+}
+
+.section-maxtemp {
+}
+
+.section-mintemp {
+    
+}
+
+.section-moons {
+    
+}
+
+.section-container {
+    padding: 1rem;
+    width: 40%;
+    line-height: 1.5rem;
+}
+
+.searchInputMobile {
     display: none;
     font-style: italic;
     font-size: 1rem;
 }
-#searchButtonMobile {
+
+.searchButtonMobile {
     display: none;
 }
 
+.row2 {
+    display: flex;
+}
 
+.row3 {
+    display: flex;
+}
 
-  
+.row4 {
+    display: flex;
+}
 
-  /* @keyframes rotateRing {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
-  } */
+.section-circumference {
+    width: 50%
+}
 
-@media screen and (max-width: 700px){
+.section-distance {
+    width: 50%;
+}
+
+.section-maxtemp {
+    width: 50%;
+}
+
+.section-mintemp {
+    width: 50%;
+}
+
+h2 {
+    font-size: 3rem;
+    color: orange;
+}
+
+h3 {
+    font-size: 2rem;
+    color:#b02e2e;
+}
+
+@media screen and (max-width: 800px){
     
 .header {
     display: flex;
@@ -280,11 +351,8 @@ h1 {
 .searchDesktop {
     display: none;
 }
-#searchButtonDesktop {
-    display: none;
-}
 
-#searchInputDesktop {
+.searchInputDesktop {
     display: none;
 }
 
@@ -293,15 +361,12 @@ h1 {
     height: 41vh;
     justify-content: center;
     align-items: center;
-    
-    
 }
 .planet-wrapper {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 #planetMars {
@@ -338,46 +403,14 @@ h1 {
 
 #planetSaturn {
     display: block;
-    text-align: end;
-    color: antiquewhite;
-    position: relative;
     width: 50vw;
     height: 20vh;
-    background: radial-gradient(circle at 30% 30%, #f2c94c, #e6ac3a);
-    border-radius: 50%;
-    box-shadow: 0 0 30px rgba(242, 201, 76, 0.5);
-  }
+}
   
   #planetSaturn::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 95vw;
-    height: 100px;
-    border: 3px solid rgba(240, 240, 240, 0.7);
-    border-radius: 50%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
-    transform: translate(-50%, -50%) rotate(-20deg);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    z-index: -1; /* Placera ringen bakom planeten */
-    animation: rotateRing 30s linear infinite; /* Lägg till animation */
+        animation: rotateRing 30s linear infinite; /* Lägg till animation */
   }
   
-    #planetSaturn::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 160px;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
-    transform: translate(-50%, -50%) rotate(-20deg);
-    z-index: -2; /* Extra skugga bakom ringen */
-  }
-  
-
 .search {
     display: flex;
     justify-content: center;
@@ -385,7 +418,7 @@ h1 {
     margin-top: 3rem;
 }
 
-#searchInputMobile {
+.searchInputMobile {
     display: flex;
     padding: 5px;
     height: 3rem;
@@ -394,7 +427,7 @@ h1 {
     font-size: 1rem;
 }
 
-#searchButtonMobile {
+.searchButtonMobile {
     display: block;
     height: 3rem;
     width: 5rem;
@@ -408,10 +441,6 @@ h1 {
 
 h1 {
     font-size: 3rem;
-    color: antiquewhite;
-    text-transform: uppercase;
-
-    
 }
 
 @keyframes rotateRing {
@@ -423,4 +452,33 @@ h1 {
     }
   }
 
+  /* Planet page css */
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.facts-container {
+    display: flex;
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-name {
+    width: 100%;
+}
+
+.info {
+    width: 100%;
+}
+
+.section-container {
+    width: 100%;
+}
 }
