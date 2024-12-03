@@ -2,13 +2,14 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", { //Funk
     method: 'GET',
     headers: {'x-zocom': 'solaris-qqO7Lv5Hg29t5hqI'} // Nyckel och user som behövs för att ansluta till API
 })
-        .then(response => {
+    .then(response => {
 
-            if(!response.ok){ //Felmeddelande om något går fel vid anslutning
-                throw new Error("Kunde inte ansluta till API")
+        if(!response.ok){ //Felmeddelande om något går fel vid anslutning
+            throw new Error("Kunde inte ansluta till API")
             }
             return response.json() //Om anslutning lyckas, omvandlas svar från API till json
         })
+
         .then(data => { //Visar innehållet i API i console
             console.log("Data: ", data)
             //Funktion för att söka efter planet i API.

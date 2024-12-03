@@ -27,16 +27,16 @@ body {
     text-align: left;
 }
 
-.searchDesktop {
+.search {
     padding: 2rem;
     display: flex;
     justify-content: end;
     align-items: center;
-    height: 100%;
+    
     width: 50vw;
 }
 
-.searchInputDesktop {
+.searchInput {
     
     height: 3rem;
     width: 15rem;
@@ -46,7 +46,7 @@ body {
     font-style: italic;
 }
 
-.searchButtonDesktop {
+.searchButton {
     height: 3rem;
     width: 6rem;
     margin-left: .5rem;
@@ -338,6 +338,7 @@ h3 {
 @media screen and (max-width: 800px){
     
 .header {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,12 +349,11 @@ h3 {
     width: 100%;
     justify-content: center;
 }
-.searchDesktop {
-    display: none;
-}
 
-.searchInputDesktop {
-    display: none;
+.search {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .planets-container {
@@ -362,6 +362,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
 .planet-wrapper {
     height: 100vh;
     display: flex;
