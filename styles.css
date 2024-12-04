@@ -396,6 +396,10 @@ h3 {
     color:#b02e2e;
 }
 
+#random-quote {
+    color: antiquewhite;
+}
+
 
 
 
@@ -444,6 +448,16 @@ h3 {
 
 .planet-section:hover {
     transform: none;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+}
+.quote {
+    display: flex;
+    justify-content: center;
+    width: 70%;
 }
 
 

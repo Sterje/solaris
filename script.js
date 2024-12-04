@@ -61,6 +61,31 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", { //Funk
             document.getElementById('minTemp').textContent = params.get('minTemp');
             document.getElementById('moons').textContent = params.get('moons');
         });
+
+        const quotes = ["“Houston, Tranquillity Base here. The Eagle has landed.” - Neil Armstrong",
+                        "“Somewhere, something incredible is waiting to be known.” - Sharon Begley",
+                        "“The universe is a pretty big place. If it’s just us, seems like an awful waste of space.” - Carl Sagan",
+                        "“Space is big. You just won´t believe how vastly, hugely, mind-boggingly big it is” - Douglas Adams"
+                        
+
+        ];
+
+        // Funktion för att hämta ett slumpmässigt citat
+        function randomQuotes() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+
+        // Funktion för att uppdatera innehållet på sidan
+        function updateRandomQuote() {
+            const randomElement = document.getElementById("random-quote");
+            const randomQuote = randomQuotes();
+            randomElement.textContent = randomQuote;
+        }
+
+        // Kör funktionen en gång vid sidladdning
+        updateRandomQuote();
+
         
 
 // function randomSection() {
