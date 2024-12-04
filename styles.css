@@ -11,6 +11,7 @@ body {
 }
 
 .header {
+    
     display: flex;
     height: 10vh;
     width: 100vw;
@@ -18,7 +19,8 @@ body {
 }
 
 .logo {
-    padding: 2rem;
+    margin-top: 2rem;
+    padding: 3rem;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -28,6 +30,7 @@ body {
 }
 
 .search {
+    margin-top: 2rem;
     padding: 2rem;
     display: flex;
     justify-content: end;
@@ -406,8 +409,8 @@ h3 {
 .earthlogo {
     position: relative;
     display: inline-block;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     margin: 0 0.1em;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #4CAF50 10%, #2E8B57 20%, #00AEEF 45%, #1E90FF 55%, #004aad 100%); /* Gradient to simulate Earth */
@@ -447,6 +450,10 @@ h3 {
     }
   }
 
+  .quote-container{
+    display: none;
+    
+  }
 
 
 @media screen and (max-width: 800px){
@@ -486,7 +493,7 @@ h3 {
 }
 
 .planet-section {
-    margin-top: 4rem
+    margin-top: 5rem
 }
 
 .planet-section:hover {
@@ -554,7 +561,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .searchInputMobile {
