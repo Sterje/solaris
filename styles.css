@@ -373,6 +373,10 @@ a {
     display: flex;
 }
 
+.row5 {
+    display: flex;
+}
+
 .section-circumference {
     width: 50%
 }
@@ -386,6 +390,18 @@ a {
 }
 
 .section-mintemp {
+    width: 50%;
+}
+
+.section-rotation {
+    width: 50%
+}
+
+.section-orbital {
+    width: 50%;
+}
+
+.section-moons {
     width: 50%;
 }
 

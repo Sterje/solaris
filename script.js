@@ -32,6 +32,8 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", { //Funk
                         maxTemp: planetData.temp.day,
                         minTemp: planetData.temp.night,
                         moons: planetData.moons.length,
+                        rotation: planetData.rotation,
+                        orbitalPeriod: planetData.orbitalPeriod,
                     });
             
                     // Öppnar en ny sida för att visa info om planet
@@ -60,6 +62,8 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", { //Funk
             document.getElementById('maxTemp').textContent = params.get('maxTemp');
             document.getElementById('minTemp').textContent = params.get('minTemp');
             document.getElementById('moons').textContent = params.get('moons');
+            document.getElementById('rotation').textContent = params.get('rotation');
+            document.getElementById('orbitalPeriod').textContent = params.get('orbitalPeriod')
         });
 
         const quotes = ["“Houston, Tranquillity Base here. The Eagle has landed.” - Neil Armstrong",
