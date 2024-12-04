@@ -70,6 +70,9 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", { //Funk
 
         ];
 
+
+        
+
         // Funktion för att hämta ett slumpmässigt citat
         function randomQuotes() {
             const randomIndex = Math.floor(Math.random() * quotes.length);
