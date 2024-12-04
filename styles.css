@@ -125,15 +125,71 @@ body {
         15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
 }
 
-#planetEarth {
+
+
+/* Behållare för planeten */
+.earth-container {
+
+    position: relative;
     color:antiquewhite;
-    margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #03e91a, #1409ed); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
-    box-shadow: 
-        inset -10px -10px 20px rgba(190, 185, 183, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
-}
+  }
+  
+  /* Själva planeten */
+  .earth {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #0077be, #005083);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 119, 190, 0.7);
+    overflow: hidden;
+  }
+  
+  /* Kontinenter (simulerade med gradienter och former) */
+  .continents {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #3ca400 20%, transparent 30%), 
+                radial-gradient(circle at 70% 50%, #3ca400 15%, transparent 25%),
+                radial-gradient(circle at 50% 80%, #3ca400 10%, transparent 20%);
+    animation: rotate 20s linear infinite;
+  }
+  
+  /* Moln (simulerade med genomskinliga lager) */
+  .clouds {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.7) 20%, transparent 30%), 
+                radial-gradient(circle at 70% 50%, rgba(255, 255, 255, 0.6) 15%, transparent 25%),
+                radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.5) 10%, transparent 20%);
+    border-radius: 50%;
+    animation: rotate-clouds 40s linear infinite;
+  }
+  
+  /* Animering för kontinenter */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Animering för moln */
+  @keyframes rotate-clouds {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
 
 #planetMars {
     color:antiquewhite;
@@ -340,6 +396,12 @@ h3 {
     color:#b02e2e;
 }
 
+
+
+
+
+
+
 @media screen and (max-width: 800px){
     
 .header {
@@ -376,6 +438,19 @@ h3 {
     justify-content: center;
 }
 
+.planet-section {
+    margin-top: 4rem
+}
+
+.planet-section:hover {
+    transform: none;
+}
+
+
+.earth {
+    width: 300px;
+    height: 300px;
+}
 #planetMars {
     display: none;
 }
@@ -409,7 +484,7 @@ h3 {
 }
 
 #planetSaturn {
-    display: block;
+    display: none;
     width: 50vw;
     height: 20vh;
 }
