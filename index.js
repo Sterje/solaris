@@ -30,5 +30,5 @@ function updateRandomQuote() {
     randomElement.textContent = randomQuote;
 }
 
-// Kör funktionen en gång vid sidladdning
+// Kör funktionen vid sidladdning
 updateRandomQuote();

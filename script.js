@@ -40,13 +40,13 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", {
             }
         }
 
-        // Eventlistener för sökknappen
+        // Eventlistener för sökknappen för att köra searchPlanet
         const planetBtn = document.getElementById("searchButton");
         planetBtn.addEventListener("click", searchPlanet);
     })
     .catch(error => console.error("Error:", error));
 
-// Körs när sidan laddas klart
+// Körs när sidan laddats klart
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
 
