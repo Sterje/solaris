@@ -3,19 +3,21 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", {
     headers: { 'x-zocom': 'solaris-qqO7Lv5Hg29t5hqI' } // Nyckel och user för att ansluta till API
 })
     .then(response => {
-        if (!response.ok) {
+        if (!response.ok) { // Om anslutning inte lyckas händer detta:
             throw new Error("Kunde inte ansluta till API");
         }
-        return response.json(); // Omvandlar svar till JSON om lyckad anslutning
+        return response.json(); // Om anslutning lyckas omvandlas datan i api till json.
     })
     .then(data => {
-        console.log("Data: ", data); // Visar API-innehållet i konsolen
+        console.log("Data: ", data); // Visar API-innehållet i konsolen för att kunna se hela innehållet och felsöka i api.
 
         // Funktion för att söka efter planet i API
         function searchPlanet() {
             const planetName = document.getElementById('searchInput').value.toLowerCase();
 
-            // Hitta planetdata via .find
+            // Hitta planetdata med .find, här använde jag först ett gäng if else satser för
+            //varje planet som fungerade men tänkte att det borde finnas enklare sätt. Hittade .find metoden på w3schools
+            //och efter en hel del pill med både AI och utan fick jag det att fungera.
             const planetData = data.bodies.find(planet => planet.name.toLowerCase() === planetName);
 
             if (planetData) {

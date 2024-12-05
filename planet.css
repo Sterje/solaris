@@ -17,17 +17,28 @@
     }
 
     .logo {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
         margin-top: 1rem;
         display: flex;
         justify-content: center;
     }
-
+    
     .h1-logo {
-        font-size: 3rem;
+        font-size: 4rem;
     }
-
+    
     .earthlogo {
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .stick {
+        height: 23px;
+        width: 10px;
+    
     }
 }

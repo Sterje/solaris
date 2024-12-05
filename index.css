@@ -22,9 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-
-    
-    
 }
 
 .logo {
@@ -43,9 +40,6 @@ body {
 }
 
 .earthlogo {
-  
-    /* position: relative; */
-    /* display: inline-block; */
     width: 9rem;
     height: 9rem;
     margin: 0 0.1em;
@@ -125,7 +119,7 @@ body {
     
 
     .h1-logo {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
     
     .earthlogo {
@@ -134,7 +128,7 @@ body {
     }
     
     .stick {
-        height: 15px;
+        height: 23px;
         width: 10px;
     }
     

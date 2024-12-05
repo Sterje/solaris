@@ -163,7 +163,6 @@ align-items: center;
     align-items: center;
     color:antiquewhite;
     width: 6%;
-    
 }
 
 .logo {
@@ -182,14 +181,11 @@ align-items: center;
 }
 
 .earthlogo {
-  
-    /* position: relative; */
-    /* display: inline-block; */
     width: 9rem;
     height: 9rem;
     margin: 0 0.1em;
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, #4CAF50 10%, #2E8B57 20%, #00AEEF 45%, #1E90FF 55%, #004aad 100%); /* Gradient to simulate Earth */
+    background: radial-gradient(circle at 30% 30%, #4CAF50 10%, #2E8B57 20%, #00AEEF 45%, #1E90FF 55%, #004aad 100%);
     animation: spin 10s linear infinite;
   }
 
@@ -200,7 +196,7 @@ align-items: center;
     left: 25%;
     width: 30%;
     height: 20%;
-    background-color: #4CAF50; /* Green for land */
+    background-color: #4CAF50;
     border-radius: 50%;
     transform: rotate(-30deg);
   }
@@ -212,7 +208,7 @@ align-items: center;
     right: 20%;
     width: 25%;
     height: 15%;
-    background-color: #4CAF50; /* Green for land */
+    background-color: #4CAF50; 
     border-radius: 50%;
     transform: rotate(20deg);
   }
@@ -228,11 +224,11 @@ align-items: center;
 
   .quote-container{
     display: none;
-    
-  }
+}
 
-  .search {
+  .controls {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -243,7 +239,7 @@ align-items: center;
     margin-left: .5rem;
     padding: 1rem;
     height: 3rem;
-    width: 15rem;
+    width: 12rem;
     border-radius: 5px;
 }
 
@@ -257,33 +253,28 @@ align-items: center;
     cursor: pointer;
 }
 
-
-
-
-
-  
-  .custom-i {
+.custom-i {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-  }
+}
   
-  .planet {
+.planet {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #a30404 20%, #ff2d1e 70%, #ea0606);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
     animation: spin 3s linear infinite;
-  }
+}
   
-  .stick {
+.stick {
     width: 20px;
     height: 70px;
     background-color: antiquewhite;
     margin-top: 10px;
-  }
+}
   
   /* Animation för snurrande planet */
   @keyframes spin {
@@ -303,15 +294,7 @@ align-items: center;
     background: radial-gradient(circle at 30% 30%, #a30404 20%, #ff2d1e 70%, #ea0606);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
     animation: spini 3s linear infinite;
-  }
-
-
-
-
-
-
-
-
+}
 
 /* Planet page css */
 
@@ -456,16 +439,16 @@ header {
 }
 
 .h1-logo {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .earthlogo {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .stick {
-    height: 13px;
+    height: 23px;
     width: 10px;
 }
 
