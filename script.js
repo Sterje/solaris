@@ -63,32 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('orbitalPeriod').textContent = params.get('orbitalPeriod');
 });
 
-// Array med citat
-const quotes = [
-    "“Houston, Tranquillity Base here. The Eagle has landed.” - Neil Armstrong",
-    "“Somewhere, something incredible is waiting to be known.” - Sharon Begley",
-    "“The universe is a pretty big place. If it’s just us, seems like an awful waste of space.” - Carl Sagan",
-    "“Space is big. You just won´t believe how vastly, hugely, mind-bogglingly big it is” - Douglas Adams",
-    "“The Earth is the cradle of Humanity. But one doesn't always live in the cradle.” - Konstantin Tsiolkovsky"
-];
-
-// Funktion för att hämta ett slumpmässigt citat
-function randomQuotes() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    return quotes[randomIndex];
-}
-
-// Uppdatera citat på sidan
-function updateRandomQuote() {
-    const randomElement = document.getElementById("random-quote");
-    const randomQuote = randomQuotes();
-    randomElement.textContent = randomQuote;
-}
-
-// Kör funktionen en gång vid sidladdning
-// updateRandomQuote();
-
-// Funktion för att visa slumpmässig sektion (tidigare kod, om kommenterad behövs)
+// Funktion för att visa slumpmässig sektion
 function randomSection() {
     const sections = document.querySelectorAll('.random-section');
     const randomIndex = Math.floor(Math.random() * sections.length);
