@@ -1,16 +1,37 @@
-fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", {
-    method: 'GET',
-    headers: { 'x-zocom': 'solaris-qqO7Lv5Hg29t5hqI' } // Nyckel och user för att ansluta till API
+const apiUrl = 'https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies';
+const apiKeyUrl = 'https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys';
+
+//Hämtar API nyckel från adressen i apiKeyUrl
+fetch(apiKeyUrl, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json', // Viktigt att inkludera rätt content-type
+    }
 })
+
+.then(response => {
+    if (!response.ok) {
+        throw new Error('API-key not found');
+    }
+    return response.json(); // Returnera JSON-data från svaret
+})
+.then(data => {
+    //Sparar nyckeln i apiKey
+    const apiKey = data.key;
+    // Nu har vi nyckel och använder den i våran GET
+    return fetch(apiUrl, {
+        method: 'GET',
+        headers: { 'x-zocom': apiKey }
+    })
+})
+
     .then(response => {
         if (!response.ok) { // Om anslutning inte lyckas händer detta:
             throw new Error("Kunde inte ansluta till API");
         }
-        return response.json(); // Om anslutning lyckas omvandlas datan i api till json.
+        return response.json(); // Om anslutning lyckas omvandlas datan i API till json.
     })
     .then(data => {
-        console.log("Data: ", data); // Visar API-innehållet i konsolen för att kunna se hela innehållet och felsöka i api.
-
         // Funktion för att söka efter planet i API
         function searchPlanet() {
             const planetName = document.getElementById('searchInput').value.toLowerCase();
@@ -21,7 +42,13 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", {
             const planetData = data.bodies.find(planet => planet.name.toLowerCase() === planetName);
 
             if (planetData) {
-                // Skapa URL med query parameters
+                // Skapar URL med query parameters, hittade denna lösning på Stack Overflow, här har jag behövt
+                // läsa på vad som händer och fortfarande är det lite luddigt för mig.
+                // En annan lösning hade varit att koppla med typ const name = document.getElementById('name') till en
+                // section som har display: none som default
+                // sen uppdatera name.textContent = planetData.name
+                // och köra display: flex för att visa section som en "popup".
+            
                 const queryParams = new URLSearchParams({
                     name: planetData.name,
                     latinName: planetData.latinName,
@@ -64,11 +91,3 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('rotation').textContent = params.get('rotation');
     document.getElementById('orbitalPeriod').textContent = params.get('orbitalPeriod');
 });
-
-// Funktion för att visa slumpmässig sektion
-function randomSection() {
-    const sections = document.querySelectorAll('.random-section');
-    const randomIndex = Math.floor(Math.random() * sections.length);
-    sections[randomIndex].style.display = 'block';
-}
-// randomSection();
