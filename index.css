@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
-.quote-section {
-    width: 100%;
+.quote-container {
+    
     display: flex;
     justify-content: center;
+    align-items: center;
     color: antiquewhite;
 }
 

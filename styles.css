@@ -38,7 +38,7 @@ align-items: center;
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+        -1px -1px 50px rgb(251, 209, 56); /* Yttre skugga */
 }
 
 
@@ -65,7 +65,7 @@ align-items: center;
 #planetEarth {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #0707b3, #14b922); /* färggradient */
+    background: radial-gradient(circle at 50% 50%, #09c30f, #3e19d3); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
         inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
@@ -98,7 +98,7 @@ align-items: center;
     color: antiquewhite;
     margin-top: 2rem;
     position: relative;
-    background: radial-gradient(circle at 30% 30%, #f2c94c, #e6ac3a);
+    background: radial-gradient(circle at 30% 30%, #776325, #e6ac3a);
     border-radius: 50%;
     box-shadow: 0 0 30px rgba(242, 201, 76, 0.5);
 }
@@ -144,10 +144,10 @@ align-items: center;
 #planetNeptun {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #031ae9, #ceced1); /* färggradient */
+    background: radial-gradient(circle at 30% 30%, #ffffff 10%, #2102d0 40%); /* färggradient */
     border-radius: 50%; /* Gör den rund */
     box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
+        inset -10px -10px 20px rgba(195, 72, 11, 0.5), /* Insida skugga */
         15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
 }
 
@@ -414,6 +414,11 @@ h3 {
 }
 
 @media screen and (max-width: 1000px){
+
+header {
+    height: 6rem;
+    
+}
 .hello {
     flex-direction: column;
     justify-content: center;
@@ -458,7 +463,7 @@ h3 {
 }
 
 .stick {
-    height: 15px;
+    height: 13px;
     width: 10px;
 }
 
