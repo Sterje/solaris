@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="planet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solaris V.2 Planet</title>
+    <title>Solaris</title>
 </head>
 <body>
-    <section class="header">
-        <div class="logo">
-            <h1>S </h1><span class="earthlogo"></span><h1> L A R I S</h1>
-          </div>
-        <!-- <section class="logo">
-            <h1><a href="index.html">S o l a r i s</a></h1>
-        </section> -->
-        <section class="search">
-            <input type="text" class="searchInput" id="searchInput" placeholder="Sök planet...">
-            <button class="searchButton" id="searchButton">Sök</button>
+    <header>
+        <section class="logo">
+            <h1 class="h1-logo">S&nbsp;</h1><span class="earthlogo"></span><h1 class="h1-logo">&nbsp;L A R I S</h1>
         </section>
+        <section class="planet-section" id="sun">
+          
+        </section>
+        <section class="planet-section" id="planetMerkur">
+            
+        </section>
+        <section class="planet-section" id="planetVenus">
+            
+        </section>
+        <section class="planet-section" id="planetEarth">
+            
+        </section>
+        <section class="planet-section" id="planetMars">
+          
+        </section>
+        <section class="planet-section" id="planetJupiter">
+            
+        </section>
+        <section class="planet-section" id="planetSaturn">
+            
+        </section>
+        <section class="planet-section" id="planetUranus">
+            
+        </section>
+        <section class="planet-section" id="planetNeptun">
+           
+        </section>
+    </header>
+    <section class="names">
+        <section class="name-section"><p>Solen</p></section>
+        <section class="name-section"><p>Merkurius</p></section>
+        <section class="name-section"><p>Venus</p></section>
+        <section class="name-section"><p>Jorden</p></section>
+        <section class="name-section"><p>Mars</p></section>
+        <section class="name-section"><p>Jupiter</p></section>
+        <section class="name-section"><p>Saturnus</p></section>
+        <section class="name-section"><p>Uranus</p></section>
+        <section class="name-section"><p>Neptunus</p></section>
     </section>
-
-    <section class="name-container">
-        <section class="section-name">
+    <!-- <section class="name-container"> -->
+        <!-- <section class="section-name">
             <h2 id="name"></h2><br>
             <h3 id="latinName"></h3><br>
-        </section>
-    </section>
+        </section> -->
+    <!-- </section> -->
     <section class="facts-container">
         <section class="hello">
+            
             <section class="info">
+                <h2 id="name"></h2><br>
+                <h3 id="latinName"></h3><br>
                 <p id="facts"></p>
             </section>
             <section class="section-container">
@@ -81,7 +112,10 @@
     
     </section>
     </section>
-
+    <section class="search">
+        <input type="text" class="searchInput" id="searchInput" placeholder="Sök himlakropp">
+        <button class="searchButton" id="searchButton">Sök</button>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

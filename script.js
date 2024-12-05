@@ -69,7 +69,8 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", { //Funk
         const quotes = ["“Houston, Tranquillity Base here. The Eagle has landed.” - Neil Armstrong",
                         "“Somewhere, something incredible is waiting to be known.” - Sharon Begley",
                         "“The universe is a pretty big place. If it’s just us, seems like an awful waste of space.” - Carl Sagan",
-                        "“Space is big. You just won´t believe how vastly, hugely, mind-boggingly big it is” - Douglas Adams"
+                        "“Space is big. You just won´t believe how vastly, hugely, mind-boggingly big it is” - Douglas Adams",
+                        "“The Earth is the cradle of Humanity. But one doesn't always live in the cradle.” - Konstantin Tsiolkovsky"
                         
 
         ];
@@ -91,7 +92,7 @@ fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", { //Funk
         }
 
         // Kör funktionen en gång vid sidladdning
-        updateRandomQuote();
+        // updateRandomQuote();
 
         
 
