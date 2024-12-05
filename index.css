@@ -5,6 +5,7 @@
 }
 
 .quote-section {
+    width: 100%;
     display: flex;
     justify-content: center;
     color: antiquewhite;
@@ -20,12 +21,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
+
+    
+    
 }
 
 .logo {
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -102,7 +104,7 @@ body {
   
   .stick {
     width: 20px;
-    height: 70px;
+    height: 65px;
     background-color: antiquewhite;
     margin-top: 10px;
   }
