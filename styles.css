@@ -1,3 +1,488 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 64);
+    background: radial-gradient(circle, #000 60%, #001c40);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 8rem;
+    width: 100%;
+    background-color: rgb(0, 0, 64);
+    background: radial-gradient(circle, #000 60%, #001c40);
     
 }
+
+.planet-section {
+width: 6%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#sun {
+    color:antiquewhite;
+    margin-top: 2rem;
+    background: radial-gradient(circle at 100% 50%, #ffee00, #ffaa00); /* Färggradient på planeten */
+    border-radius: 50%; /* Gör planeten rund. */
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Skugga på insidan av planet */
+        -1px -1px 50px rgb(251, 209, 56); /* SKugga på utsidan av planet */
+}
+
+
+#planetMerkur {
+    color:antiquewhite;
+    margin-top: 2rem;
+    background: radial-gradient(circle at 100% 50%, #362b21, #ceced1); 
+    border-radius: 50%; 
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+#planetVenus {
+    color:antiquewhite;
+    margin-top: 2rem;
+    background: radial-gradient(circle at 50% 100%, #ce9506, #c55f00); 
+    border-radius: 50%; 
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+#planetEarth {
+    color:antiquewhite;
+    margin-top: 2rem;
+    background: radial-gradient(circle at 50% 50%, #09c30f, #3e19d3); 
+    border-radius: 50%; 
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+
+#planetMars {
+    color:antiquewhite;
+    margin-top: 2rem;
+    background: radial-gradient(circle at 50% 50%, #ff5f40, #b03a2e); 
+    border-radius: 50%; 
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+#planetJupiter {
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 2rem;
+    background: radial-gradient(circle at 50% 50%, #7c7c59, #c3c1bf); 
+    border-radius: 50%; 
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+#planetSaturn {
+    color: antiquewhite;
+    margin-top: 2rem;
+    position: relative;
+    background: radial-gradient(circle at 30% 30%, #776325, #e6ac3a);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(242, 201, 76, 0.5);
+}
+
+#planetSaturn::before { /* Ringen runt saturnus */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    border: 3px solid rgba(240, 240, 240, 0.7);
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    transform: translate(-50%, -50%) rotate(-40deg);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    z-index: -1; /* Placerar ringen bakom planeten */
+}
+
+#planetSaturn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+    transform: translate(-50%, -50%) rotate(-20deg);
+    z-index: -2; 
+}
+
+#planetUranus {
+    color:antiquewhite;
+    margin-top: 2rem;
+    background: radial-gradient(circle at 50% 50%, #63dee0, #02a0a8); 
+    border-radius: 50%; 
+    box-shadow: 
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+#planetNeptun {
+    color:antiquewhite;
+    margin-top: 2rem;
+    background: radial-gradient(circle at 30% 30%, #ffffff 10%, #2102d0 40%); 
+    border-radius: 50%; 
+    box-shadow: 
+        inset -10px -10px 20px rgba(195, 72, 11, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+.names {
+    margin-top: 1rem;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.name-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:antiquewhite;
+    width: 6%;
+    
+}
+
+.logo {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.h1-logo {
+   
+    font-size: 10rem;
+    font-family: "Jaro";
+    color: antiquewhite;
+}
+
+.earthlogo {
+    width: 9rem;
+    height: 9rem;
+    margin: 0 0.1em;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #4CAF50 10%, #2E8B57 20%, #00AEEF 45%, #1E90FF 55%, #004aad 100%);
+    animation: spin 10s linear infinite;
+  }
+
+  .earthlogo::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 30%;
+    height: 20%;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+  }
+
+  .earthlogo::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    width: 25%;
+    height: 15%;
+    background-color: #4CAF50; 
+    border-radius: 50%;
+    transform: rotate(20deg);
+  }
+
+  @keyframes spin { /* Animation för jorden i logotypen */
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .quote-container{
+    display: none;
+}
+
+  .controls {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.searchInput {
+    font-size: 1rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    padding: 1rem;
+    height: 3rem;
+    width: 12rem;
+    border-radius: 5px;
+}
+
+.searchButton {
+    font-size: 1rem;
+    color: antiquewhite;
+    background-color: #ff5f40;
+    border-radius: 5px;
+    width: 4rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.custom-i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+  
+.planet {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #a30404 20%, #ff2d1e 70%, #ea0606);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: spini 3s linear infinite;
+}
+  
+.stick {
+    width: 20px;
+    height: 70px;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+  
+  /* Animation för snurrande planet */
+  @keyframes spini {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .planetMobile {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #a30404 20%, #ff2d1e 70%, #ea0606);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: spini 3s linear infinite;
+}
+
+/* Planet page css */
+
+.name-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section-name {
+    padding: 1rem;
+    width: 70%;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.info-container {
+    color:antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    padding: 1rem;
+    width: 50%;
+    line-height: 1.5rem;
+    color: antiquewhite;
+}
+
+.section-container {
+    color: antiquewhite;
+    padding: 1rem;
+    width: 50%;
+    line-height: 1.5rem;
+}
+
+.nameFacts {
+    display: flex;
+    width: 70%;
+}
+
+.section-container {
+    padding: 1rem;
+    width: 40%;
+    line-height: 1.5rem;
+}
+
+.row2 {
+    display: flex;
+}
+
+.row3 {
+    display: flex;
+}
+
+.row4 {
+    display: flex;
+}
+
+.row5 {
+    display: flex;
+}
+
+.section-circumference {
+    width: 50%
+}
+
+.section-distance {
+    width: 50%;
+}
+
+.section-maxtemp {
+    width: 50%;
+}
+
+.section-mintemp {
+    width: 50%;
+}
+
+.section-rotation {
+    width: 50%
+}
+
+.section-orbital {
+    width: 50%;
+}
+
+.section-moons {
+    width: 50%;
+}
+
+h2 {
+    font-size: 3rem;
+    color: orange;
+}
+
+h3 {
+    font-size: 2rem;
+    color:#b02e2e;
+}
+
+@media screen and (max-width: 1000px){
+
+header {
+    height: 6rem;
+    
+}
+.nameFacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.info {
+    width: 100%;
+}
+
+.section-container {
+    width: 100%;
+}
+
+.planet-section {
+    display:none;
+}
+
+.names {
+    display: none;
+}
+
+.logo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.h1-logo {
+    font-size: 4rem;
+}
+
+.earthlogo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.stick {
+    height: 23px;
+    width: 10px;
+}
+
+.mobileContainer {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet {
+    width: 10px;
+    height: 10px;
+}
+
+.planetMobile {
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #a30404 20%, #ff2d1e 70%, #ea0606);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: spini 6s linear infinite;
+  }
+
+  @keyframes spini {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+    

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="planet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris</title>
+</head>
+<body>
+    <header>
+
+        <section class="planet-section" id="sun"></section>
+        <section class="planet-section" id="planetMerkur"></section>
+        <section class="planet-section" id="planetVenus"></section>
+        <section class="planet-section" id="planetEarth"></section>
+        <section class="planet-section" id="planetMars"></section>
+        <section class="planet-section" id="planetJupiter"></section>
+        <section class="planet-section" id="planetSaturn"></section>
+        <section class="planet-section" id="planetUranus"></section>
+        <section class="planet-section" id="planetNeptun"></section>
+    </header>
+    <section class="names">
+        <section class="name-section"><p>Solen</p></section>
+        <section class="name-section"><p>Merkurius</p></section>
+        <section class="name-section"><p>Venus</p></section>
+        <section class="name-section"><p>Jorden</p></section>
+        <section class="name-section"><p>Mars</p></section>
+        <section class="name-section"><p>Jupiter</p></section>
+        <section class="name-section"><p>Saturnus</p></section>
+        <section class="name-section"><p>Uranus</p></section>
+        <section class="name-section"><p>Neptunus</p></section>
+    </section>
+ 
+    <main class="facts-container">
+        <section class="nameFacts">
+             <article class="info">
+                <h2 id="name"></h2><br>
+                <h3 id="latinName"></h3><br>
+                <p id="facts"></p>
+             </article>
+            <section class="section-container">
+                <section class="row2">
+                    <article class="section-circumference">
+                        <p><strong>Omkrets:</strong></p>
+                        <span id="circumference"></span>
+                    </article>
+                    <article class="section-distance">
+                        <p><strong>Avstånd i km:</strong></p>
+                        <span id="distanceToSun"></span><br><br>
+                    </article>
+                </section>
+                <section class="row3">
+                    <article class="section-maxtemp">
+                        <p><strong>Max temp:</strong></p>
+                        <span id="maxTemp"></span>
+                    </article>
+                    <article class="section-mintemp">
+                        <p><strong>Min temp:</strong></p>
+                        <span id="minTemp"></span><br><br>
+                    </article>
+                </section>
+                <section class="row4">
+                    <article class="section-rotation">
+                        <p><strong>Jorddygn runt axel:</strong></p>
+                        <span id="rotation"></span>
+                    </article>
+                    <article class="section-orbital">
+                        <p><strong>Jorddygn runt solen:</strong></p>
+                        <span id="orbitalPeriod"></span><br><br>
+                    </article>
+                </section>
+                <section class="row5">
+                    <article class="section-moons">
+                        <p><strong>Antal månar:</strong></p>
+                        <span id="moons"></span>
+                    </article>
+                <article class="empty"></article>
+            </section>
+        </section>
+    </main>
+    </section>
+
+    <section class="logo">
+        <h1 class="h1-logo">S&nbsp;</h1><span class="earthlogo"></span><h1 class="h1-logo">&nbsp;L A R&nbsp;</h1>
+        <section class="custom-i">
+            <section class="planet"></section>
+            <section class="stick"></section>
+        </section>
+        <h1 class="h1-logo">&nbsp;S</h1>
+    </section>
+
+    <nav class="controls">
+        <a href="main.html"><button class="searchButton" id="home">Start</button></a>
+        <input type="text" class="searchInput" id="searchInput" placeholder="Sök himlakropp...">
+        <button class="searchButton" id="searchButton">Sök</button>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
