@@ -34,64 +34,64 @@ align-items: center;
 #sun {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 100% 50%, #ffee00, #ffaa00); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
+    background: radial-gradient(circle at 100% 50%, #ffee00, #ffaa00); /* Färggradient på planeten */
+    border-radius: 50%; /* Gör planeten rund. */
     box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        -1px -1px 50px rgb(251, 209, 56); /* Yttre skugga */
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Skugga på insidan av planet */
+        -1px -1px 50px rgb(251, 209, 56); /* SKugga på utsidan av planet */
 }
 
 
 #planetMerkur {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 100% 50%, #362b21, #ceced1); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
+    background: radial-gradient(circle at 100% 50%, #362b21, #ceced1); 
+    border-radius: 50%; 
     box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
 #planetVenus {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 100%, #ce9506, #c55f00); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
+    background: radial-gradient(circle at 50% 100%, #ce9506, #c55f00); 
+    border-radius: 50%; 
     box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
 #planetEarth {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #09c30f, #3e19d3); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
+    background: radial-gradient(circle at 50% 50%, #09c30f, #3e19d3); 
+    border-radius: 50%; 
     box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
 
 #planetMars {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #ff5f40, #b03a2e); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
+    background: radial-gradient(circle at 50% 50%, #ff5f40, #b03a2e); 
+    border-radius: 50%; 
     box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
 #planetJupiter {
     text-align: center;
     color: antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #7c7c59, #c3c1bf); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
+    background: radial-gradient(circle at 50% 50%, #7c7c59, #c3c1bf); 
+    border-radius: 50%; 
     box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
 #planetSaturn {
@@ -103,7 +103,7 @@ align-items: center;
     box-shadow: 0 0 30px rgba(242, 201, 76, 0.5);
 }
 
-#planetSaturn::before {
+#planetSaturn::before { /* Ringen runt saturnus */
     content: "";
     position: absolute;
     top: 50%;
@@ -115,7 +115,7 @@ align-items: center;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
     transform: translate(-50%, -50%) rotate(-40deg);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    z-index: -1; /* Placera ringen bakom planeten */
+    z-index: -1; /* Placerar ringen bakom planeten */
 }
 
 #planetSaturn::after {
@@ -128,27 +128,27 @@ align-items: center;
     border-radius: 50%;
     background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
     transform: translate(-50%, -50%) rotate(-20deg);
-    z-index: -2; /* Extra skugga bakom ringen */
+    z-index: -2; 
 }
 
 #planetUranus {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 50% 50%, #63dee0, #02a0a8); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
+    background: radial-gradient(circle at 50% 50%, #63dee0, #02a0a8); 
+    border-radius: 50%; 
     box-shadow: 
-        inset -10px -10px 20px rgba(255, 165, 120, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+        inset -10px -10px 20px rgba(255, 165, 120, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
 #planetNeptun {
     color:antiquewhite;
     margin-top: 2rem;
-    background: radial-gradient(circle at 30% 30%, #ffffff 10%, #2102d0 40%); /* färggradient */
-    border-radius: 50%; /* Gör den rund */
+    background: radial-gradient(circle at 30% 30%, #ffffff 10%, #2102d0 40%); 
+    border-radius: 50%; 
     box-shadow: 
-        inset -10px -10px 20px rgba(195, 72, 11, 0.5), /* Insida skugga */
-        15px 15px 30px rgba(0, 0, 0, 0.5); /* Yttre skugga */
+        inset -10px -10px 20px rgba(195, 72, 11, 0.5), 
+        15px 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
 .names {
@@ -163,6 +163,7 @@ align-items: center;
     align-items: center;
     color:antiquewhite;
     width: 6%;
+    
 }
 
 .logo {
@@ -213,7 +214,7 @@ align-items: center;
     transform: rotate(20deg);
   }
 
-  @keyframes spin {
+  @keyframes spin { /* Animation för jorden i logotypen */
     from {
       transform: rotate(0deg);
     }
@@ -266,7 +267,7 @@ align-items: center;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #a30404 20%, #ff2d1e 70%, #ea0606);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-    animation: spin 3s linear infinite;
+    animation: spini 3s linear infinite;
 }
   
 .stick {
@@ -277,7 +278,7 @@ align-items: center;
 }
   
   /* Animation för snurrande planet */
-  @keyframes spin {
+  @keyframes spini {
     from {
       transform: rotate(0deg);
     }

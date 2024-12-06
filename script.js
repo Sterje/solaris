@@ -5,18 +5,18 @@ const apiKeyUrl = 'https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys'
 fetch(apiKeyUrl, {
     method: 'POST',
     headers: {
-        'Content-Type': 'application/json', // Viktigt att inkludera rätt content-type
+        'Content-Type': 'application/json', // Informerar servern att datan är i JSON-format
     }
 })
 
-.then(response => {
+.then(response => { // Om något går fel i anslutningen
     if (!response.ok) {
         throw new Error('API-key not found');
     }
     return response.json(); // Returnera JSON-data från svaret
 })
 .then(data => {
-    //Sparar nyckeln i apiKey
+    // Sparar nyckeln i apiKey
     const apiKey = data.key;
     // Nu har vi nyckel och använder den i våran GET
     return fetch(apiUrl, {
@@ -37,11 +37,12 @@ fetch(apiKeyUrl, {
             const planetName = document.getElementById('searchInput').value.toLowerCase();
 
             // Hitta planetdata med .find, här använde jag först ett gäng if else satser för
-            //varje planet som fungerade men tänkte att det borde finnas enklare sätt. Hittade .find metoden på w3schools
-            //och efter en hel del pill med både AI och utan fick jag det att fungera.
+            // varje planet som fungerade men tänkte att det borde finnas enklare sätt. Hittade .find metoden på w3schools.
+            // Söker i sökvägen data.bodies för att matcha input från användaren
             const planetData = data.bodies.find(planet => planet.name.toLowerCase() === planetName);
 
             if (planetData) {
+                // Här var mitt svåraste moment, att få ut informationen till en sida.
                 // Skapar URL med query parameters, hittade denna lösning på Stack Overflow, här har jag behövt
                 // läsa på vad som händer och fortfarande är det lite luddigt för mig.
                 // En annan lösning hade varit att koppla med typ const name = document.getElementById('name') till en
@@ -73,13 +74,16 @@ fetch(apiKeyUrl, {
         const planetBtn = document.getElementById("searchButton");
         planetBtn.addEventListener("click", searchPlanet);
     })
+    // Felhantering
     .catch(error => console.error("Error:", error));
 
 // Körs när sidan laddats klart
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
 
-    // Sätter information från URL till element på sidan
+    // Skickar information från URL till element på sidan.
+    // Alltså tar informationen som skickades in i queryParams längre upp och 
+    // skriver ut det till varje specifikt element på planet.html
     document.getElementById('name').textContent = params.get('name');
     document.getElementById('latinName').textContent = params.get('latinName');
     document.getElementById('facts').textContent = params.get('desc');

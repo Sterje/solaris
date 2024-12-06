@@ -24,11 +24,11 @@ function randomQuotes() {
 }
 
 // Visa citat på sidan.
-function updateRandomQuote() {
+function showRandomQuote() {
     const randomElement = document.getElementById("random-quote");
     const randomQuote = randomQuotes();
     randomElement.textContent = randomQuote;
 }
 
 // Kör funktionen vid sidladdning
-updateRandomQuote();
+showRandomQuote();
